@@ -1,9 +1,15 @@
-// let user = {
-//   name: 'pankaj',
-//   tech: 'Nodejs',
-//   experience: 3.4,
-// };
-
+let user = {
+  name: 'pankaj',
+  tech: 'Nodejs',
+  experience: 3.4,
+};
+let userArr=[];
+for (const property in user) {
+  userArr.push(property);
+  userArr.push(user[property]);
+  //console.log(`${property}: ${user[property]}`);
+}
+console.log(userArr);
 // for (let key of user) {
 //   console.log(key);
 // }
@@ -32,16 +38,16 @@
 //     }
 //     // return displayName;
 //   }
-  
+
 //   var myFunc = makeFunc();
 //   myFunc();
 
 //op = ["name", "pankaj", "tech", "Nodejs", "experience", 3.6]
 
-// let obj = {
-//   name: 'pankaj',
-//   designation: 'developer',
-// };
+let obj = {
+  name: 'pankaj',
+  designation: 'developer',
+};
 
 // function empDetails(name, designation) {
 //   this.name = name;
@@ -78,7 +84,7 @@
 // //console.log(a); // a is not defined.
 // console.log(b); // 2
 
-// let a = 1; 
+// let a = 1;
 // var b = 2;
 
 
