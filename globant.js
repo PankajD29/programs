@@ -4,10 +4,16 @@ let user = {
   experience: 3.4,
 };
 let userArr=[];
-for (const property in user) {
-  userArr.push(property);
-  userArr.push(user[property]);
-  //console.log(`${property}: ${user[property]}`);
+// for (const property in user) {
+//   userArr.push(property);
+//   userArr.push(user[property]);
+//   //console.log(`${property}: ${user[property]}`);
+// }
+
+for (const [key, value] of Object.entries(user)) {
+  console.log(`${key}: ${value}`);
+  userArr.push(key)
+  userArr.push(value)
 }
 console.log(userArr);
 // for (let key of user) {
@@ -88,9 +94,9 @@ let obj = {
 // var b = 2;
 
 
-function test(a=10){
-console.log(a);
-}
-
-
-test();
+// function test(a=10){
+// console.log(a);
+// }
+//
+//
+// test();
