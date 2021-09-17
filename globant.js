@@ -3,6 +3,7 @@ let user = {
   tech: 'Nodejs',
   experience: 3.4,
 };
+console.log(Object.entries(user));
 let userArr=[];
 // for (const property in user) {
 //   userArr.push(property);
