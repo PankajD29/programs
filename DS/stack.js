@@ -7,6 +7,17 @@ function Stack(){
   this.clear=clear;
 }
 
+// class Stack {
+//   constructor() {
+//     this.dataStore=[],
+//     this.top=0;
+//   }
+//   push=push;
+//   pop=pop;
+//   peek=peek;
+//   clear=clear;
+// }
+
 function push(element){
   this.dataStore[this.top++]=element;
 }
@@ -16,7 +27,8 @@ function peek() {
 }
 
 function pop(){
-  this.dataStore[-this.top];
+  this.dataStore.pop();
+  this.top--;
 }
 
 function clear(){
@@ -30,4 +42,5 @@ stackobj.push('ashwini');
 console.log(stackobj.dataStore);
 console.log(stackobj.peek());
 stackobj.pop()
-console.log(stackobj.dataStore);
+console.log(stackobj.dataStore.length);
+console.log(stackobj.peek());

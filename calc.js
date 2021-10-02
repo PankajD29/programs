@@ -10,4 +10,9 @@ const cObj={
     add,sub
 }
 
+
+forEach((item, i) => {
+
+});
+
 module.exports=cObj;
