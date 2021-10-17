@@ -19,3 +19,6 @@ function countVowels(sentence) {
 countVowels('Hi Sachin, how are you?');
 //countVowels('AEeIiOoUua');
 //countVowels('aaaaa');
+
+var string = "John Doe's iPhone6 ";
+console.log("output:-",string.split(" ").length-1);

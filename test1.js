@@ -207,6 +207,44 @@
 const key = {"a":"b"};
 let obj = {"a":"b"};
 obj[key] = "obj";
-for(let c of obj) {
- console.log(c);
+for(let c of  Object.entries(obj)) {
+ console.log("c:-",c);
 }
+
+
+function test(){
+  console.log(this);
+}
+
+function getReverse(inputStr){
+  let tempStr = inputStr.split(" ");
+  //let [ele1,ele2,ele3,ele4]=tempStr;
+  let outPutArr=[];
+  tempStr.forEach((item) => {
+    //console.log(item);
+    let eleArr = [...item].reverse().join('')
+    console.log(eleArr);
+    outPutArr.push(eleArr);
+  });
+
+  console.log("outPutArr:-",outPutArr.join(' '));
+
+  // console.log("before",ele1);
+  // let ele1Arr = [...ele1];
+  // let ele2Arr = [...ele2];
+  // //console.log(ele1Arr);
+  // let tempele1 = ele1Arr.reverse().join('');
+  // console.log("after",tempele1);
+  //console.log(tempStr);
+}
+
+getReverse("my name is abcd");  // ym eman si dcba
+//test();
+
+// let thisObject={
+//   name:"Pankaj"
+// }
+//
+// let pankajTest=test.bind(thisObject);
+//
+// pankajTest();
